@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +12,7 @@ body {
     background-color: rgba(0, 0, 0, 0.919);
     border-radius: 20px;
     margin-top: 40px;
+
 }
 
 .container {
@@ -46,6 +50,10 @@ body {
 
 .container-left button i {
     padding-left: 8px;
+}
+
+.container-right img {
+    display: block;
 }
 
 .section-2 {
@@ -208,6 +216,11 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .blog-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .blog-2 {
