@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.919);
     border-radius: 20px;
@@ -54,6 +54,15 @@ body {
 
 .container-right img {
     display: block;
+}
+
+.section-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
 }
 
 .section-2 {
@@ -111,8 +120,8 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 
     /* box-shadow: 1px 2px 2px gray; */
 }
@@ -195,7 +204,12 @@ body {
 /* for tablets */
 @media only screen and (min-width:481px) and (max-width:768px) {
 
-    .container,
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
     .section-2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -209,16 +223,21 @@ body {
 
 }
 
+/* @media only screen and (max-width: 1024px) {
+    .blog-2img {
+        width: 230px;
+    }
+} */
+
 /* for mobile */
 @media screen and (min-width:320px) and (max-width:480px) {
 
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
     }
 
-    .blog-1 {
+    .section-2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
